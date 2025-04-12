@@ -38,7 +38,7 @@ jobs:
           from: GitHub Reports <github.reports@techfiddle.io>
           secure: true
           body: Logs - ${{env.OUTPUT}}
-          reply_to: complabs28@gmail.com
+          reply_to: applsdev@gmail.com
           ignore_cert: true
           convert_markdown: true
       - name: Skipped Job Explanation
