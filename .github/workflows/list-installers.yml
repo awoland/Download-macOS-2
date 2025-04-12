@@ -26,7 +26,7 @@ jobs:
       OUTPUT: ${{needs.list-installers.outputs.list}}
     steps:
       - name: Send Report
-        if: github.repository == 'Comp-Labs/Download-macOS'
+        if: github.repository == 'awoland/Download-macOS-2'
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.gmail.com
@@ -34,7 +34,7 @@ jobs:
           username: ${{secrets.MAIL_USERNAME}}
           password: ${{secrets.MAIL_PASSWORD}}
           subject: Weekly macOS List Versions Report
-          to: complabs28@gmail.com
+          to: applsdev@gmail.com
           from: GitHub Reports <github.reports@techfiddle.io>
           secure: true
           body: Logs - ${{env.OUTPUT}}
